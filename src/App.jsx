@@ -1,7 +1,6 @@
 import "./App.css";
 import AllArticles from "./components/AllArticles";
 import { Routes, Route } from "react-router";
-import ArticleCards from "./components/ArticleCards";
 import SingleArticle from "./components/SingleArticle";
 
 function App() {
