@@ -18,6 +18,7 @@ function SingleArticle() {
   }
   return (
     <div className="article-page">
+      <img src={article.article_img_url} />
       <h1>{article.title}</h1>
       <p>By {article.author}</p>
       <p>{article.body}</p>
