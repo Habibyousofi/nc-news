@@ -6,8 +6,6 @@ function AllArticles() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     getAllArticles().then(({ articles }) => {
-      console.log(articles);
-
       setArticles(articles);
     });
   }, []);
