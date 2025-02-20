@@ -64,10 +64,13 @@ h2 {
   color: #080a0c;
   text-decoration: none;
   margin-top: 10px;
+  padding: 5px 20px;
+  background-color: #f9f1f1;
 }
 
 .read-more:hover {
   text-decoration: underline;
+  color: #745fdb;
 }
 
 .name {
@@ -80,4 +83,41 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   z-index: 1000;
+}
+.article-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.comment-card {
+  padding: 10px 15px; /* Add some padding around the comment */
+  border: 1px solid #ccc; /* Optional: border around the comment */
+  width: 100%; /* Ensure the comment card takes the full width of the parent */
+  background-color: #4535359d; /* Light background color */
+  border-radius: 5px; /* Optional: rounded corners for the comment card */
+}
+
+.comment-card p {
+  margin: 5px;
+  align-items: flex-start;
+}
+
+.comment-card p strong {
+  font-weight: bold;
+  align-items: flex-start;
+}
+.comment-button {
+  align-self: flex-start;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.comment-button:hover {
+  background-color: aqua;
 }
