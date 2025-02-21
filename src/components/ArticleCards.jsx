@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 
 function ArticleCards({ article }) {
+
   return (
     <div className="article-card">
       <img src={article.article_img_url} />

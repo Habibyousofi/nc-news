@@ -16,12 +16,31 @@ export const fetchArticleById = (article_id) => {
 };
 export const getComments = (article_id) => {
   return ncNewsApi
-    .get(`/api/articles/${article_id}/comments`)
-    .then(({ data }) => {
+  .get(`/api/articles/${article_id}/comments`)
+  .then(({ data }) => {
+      
       return data;
-    })
-    .catch((error) => {
-      console.error("Error fetching article:", error);
-      throw error;
-    });
-};
+    });}
+  
+
+export const viewVotes = (article_id) => {
+  return ncNewsApi
+  .get(`/api/articles/${article_id}`)
+  .then(({data})=> {
+    
+    return data
+  })}
+  export const incrementVotes = (article_id) => {
+    return ncNewsApi
+      .patch(`/api/articles/${article_id}`, { inc_votes: 1 })
+      .then(({ data }) => {
+        return data.votes;
+      })}
+      export const decrementVotes = (article_id) => {
+        return ncNewsApi
+          .patch(`/api/articles/${article_id}`, { inc_votes: -1 })
+          .then(({ data }) => {
+            return data.votes;
+          })
+}
+
