@@ -3,6 +3,7 @@ import AllArticles from "./components/AllArticles";
 import { Routes, Route } from "react-router";
 import SingleArticle from "./components/SingleArticle";
 import ListComments from "./components/ListComments";
+import VoteArticles from "./components/VoteArticles";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           path="/articles/:article_id/comments"
           element={<ListComments />}
         />
+        <Route path="/articles/:article_id/votes" element={<VoteArticles/>}/>
       </Routes>
     </>
   );

@@ -19,9 +19,16 @@ export const getComments = (article_id) => {
     .get(`/api/articles/${article_id}/comments`)
     .then(({ data }) => {
       return data;
-    })
-    .catch((error) => {
-      console.error("Error fetching article:", error);
+    });}
+  
+
+export const viewVotes = (article_id) => {
+  return ncNewsApi
+  .get(`/api/articles/${article_id}/votes`)
+  .then(({data})=> data)
+  .catch((error) => {
+      console.error("Error fetching votes", error);
       throw error;
-    });
-};
+  })
+  }
+
