@@ -15,7 +15,7 @@ function App() {
           path="/articles/:article_id/comments"
           element={<ListComments />}
         />
-        <Route path="/articles/:article_id/votes" element={<VoteArticles/>}/>
+        <Route path="/articles/:article_id" element={<VoteArticles/>}/>
       </Routes>
     </>
   );

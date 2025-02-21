@@ -1,6 +1,5 @@
 function ListComments({ comment }) {
-  console.log(comment);
-
+ 
   return (
     <div className="comment-card">
       <p>
